@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const mime = require('mime');
+
 app.use('/css', express.static(__dirname + '/css', { 
   setHeaders: function(res, path, stat) {
     res.set('Content-Type', 'text/css');
